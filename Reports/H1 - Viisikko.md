@@ -1,24 +1,24 @@
 # H1 - Viisikko
 
-x) Lue ja tiivistä kolme annettua artikkelia:
+## x) Lue ja tiivistä kolme annettua artikkelia:
 - Karvinen 2023: Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/
 - Karvinen 2023: Create a Web Page Using Github. Luettavissa: https://terokarvinen.com/2023/create-a-web-page-using-github/
 - Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 
-## Run Salt Command Locally:
+### Run Salt Command Locally:
 
 - Salt-komennoilla voidaan hallita tietokonetta paikallisesti, mutta yleisin käyttötapa on useiden orjien hallitseminen etänä.
 - Samat Salt-komennot toimivat Linux - sekä Windows-käyttöjärjestelmillä.
 - Tärkeimmät tilafunktiot (state functions) ovat pkg, file, service, user ja cmd.
 
-## Create a Web Page Using Github:
+### Create a Web Page Using Github:
 
 - Verkkosivun julkaiseminen Githubilla on helppoa ja aloittelijaystävällistä
 - Uuteen arkistoon (repository) tarvitsee luoda README-tiedosto, muuten myöhemmin ilmenee ongelmia
   - Mahdolliset ongelmat eivät paljastu artikkelissa
 - .md loppupääte muuntaa luomasi tiedoston verkkosivuksi MarkDown-merkintäkiellä
 
-## Raportin kirjoittaminen:
+### Raportin kirjoittaminen:
 
 - Raportissa tulee tulla selkeästi ilmi, mitä teit ja mihin tämä johti
 - Mikäli joku muu seuraa raporttiasi, hänen tulisi päästä samaan lopputulokseen
@@ -26,9 +26,9 @@ x) Lue ja tiivistä kolme annettua artikkelia:
 - Lähteet, lähteet, lähteet
 - Tekstin tulee olle helppolukuista ja selkokielistä ilman kirjoitusvirheitä
 
-## Tehtävät
+# Tehtävät
 
-### a) Hello Windows Salt World!
+## a) Hello Windows Salt World!
 
 Olen asentanut Windows-koneelleni Salt-minionin heidän verkkosivuiltaan: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html
 
@@ -36,13 +36,13 @@ Todisteena kuvankaappaus tietokoneeni PowerShell komentoriviltä:
 
 ![PowerShell Administrator komentorivi](https://github.com/rakkitect/Server-Management/blob/main/Images/salt-version.png)
 
-### b) Hello Vagrant!
+## b) Hello Vagrant!
 
 Olen asentanut myös Vagrantin koneelleni. Kuvankaappauksessa olen ottanut SSH-yhteyden virtuaalikoneeseen.
 
 ![Vagrant SSH](https://github.com/rakkitect/Server-Management/blob/main/Images/vagrant.png)
 
-### c) Linux-virtuaalikoneen luominen Vagrantilla
+## c) Linux-virtuaalikoneen luominen Vagrantilla
 
 Aloitin uuden virtuaalikoneen luomalla tyhjän kansion Demo2 ja siirtymällä sinne komennoilla:
 
@@ -75,7 +75,7 @@ ja tämä korjasi ongelmani.
 
 ![Onnistunut virtuaalikoneen käyttöönotto](https://github.com/rakkitect/Server-Management/blob/main/Images/vagrant-init2.png)
 
-### d) Salt asennus Linux-virtuaalikoneelle
+## d) Salt asennus Linux-virtuaalikoneelle
 
 Aloitin Salt-minionin asennuksen päivittämällä paketin hallinnan, jonka jälkeen ajoin asennuksen:
 
@@ -85,9 +85,9 @@ Aloitin Salt-minionin asennuksen päivittämällä paketin hallinnan, jonka jäl
 ![Salt-minion asennettuna](https://github.com/rakkitect/Server-Management/blob/main/Images/salt-minion-linux.png)
 
 
-### e) Viisi tärkeintä Salt tilafunktiota
+## e) Viisi tärkeintä Salt tilafunktiota
 
-#### pkg
+### pkg
 
 pkg.installed varmistaa että järjestelmässä on jokin tietty sovellus asennettuna. Valitsin tätä varten Micro-tekstieditorin. Tilafunktio ajetaan komennolla:
 
@@ -97,7 +97,7 @@ Koska Micro ei ollut asennettuna aiemmin, niin pkg.installed tilafunktio asensi 
 
 ![pkg.installed demonstraatio](https://github.com/rakkitect/Server-Management/blob/main/Images/pkg_installed.png)
 
-#### file
+### file
 
 file.managed varmistaa että järjestelmässä on jokin tietty tiedosto. Tässä esimerkissä tarkistetaan löytyykö järjestelmästä tiedosto tmp/liirumlaarum, ja mikäli ei, niin se luodaan
 
@@ -105,7 +105,7 @@ file.managed varmistaa että järjestelmässä on jokin tietty tiedosto. Tässä
 
 ![Luotu kansio](https://github.com/rakkitect/Server-Management/blob/main/Images/file-managed.png)
 
-#### service
+### service
 
 service.running varmistaa että spesifioitu daemoni on käynnissä.
 
@@ -115,7 +115,7 @@ En asentanut virtuaalikoneelleni Apache2-sovelluspakettia, joten annettu komento
 
 ![Service.running](https://github.com/rakkitect/Server-Management/blob/main/Images/service-running.png)
 
-#### user
+### user
 
 user.present tilafunktio tarkistaa onko tietty käyttäjä järjestelmässä. Vastaavasti user.absent tarkistaa että käyttäjää EI ole järjestelmässä.
 
@@ -123,7 +123,7 @@ Molemmissa tilanteissa mikäli järjestelmän tila ei vastaa tilafunktion määr
 
 ![User.present demonstraatio](https://github.com/rakkitect/Server-Management/blob/main/Images/user-present.png)
 
-#### cmd
+### cmd
 
 cmd.run tilafunktio ajaa annetun komennon. Kokeilin komentoa
 
@@ -134,13 +134,13 @@ joka tallensi "salt-run" nimiseen tiedostoon ajan komennon ajamishetkellä.
 ![cmd.run demonstraatio](https://github.com/rakkitect/Server-Management/blob/main/Images/cmd-run.png)
 ![Luotu tiedosto](https://github.com/rakkitect/Server-Management/blob/main/Images/salt-run.png)
 
-### f) Idempotentti
+## f) Idempotentti
 
 Idempotentti toiminto ei muuta järjestelmää ensimmäisen kerran jälkeen. Esimerkkinä tästä on mm. käyttämäni user.present tilafunktio; kun ajoin komennon ensimmäisen kerran, se loi käyttäjän - mutta vaikka ajaisin saman komennon sata kertaa, käyttäjää ei luoda uudestaan (ellei käyttäjää poisteta välissä)
 
 Muita vastaavia idempotenttejä tilafunktioita ovat file.managed ja pkg.installed, jotka ensimmäisen ajon jälkeen eivät muuta järjestelmän tilaa.
 
-### g) Tiedon kerääminen koneesta grains.items komennolla
+## g) Tiedon kerääminen koneesta grains.items komennolla
 
 Grains, yksikössä grain, ovat tietoja järjestelmästä. Tiedot saa tulostettua ruudulle komennolla:
 
@@ -164,7 +164,7 @@ Poimin kolme mielenkiintoista kohtaa komennolla:
 
 
 
-## Lähteet:
+# Lähteet:
 
 - Karvinen 2006: Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/06/04/raportin-kirjoittaminen-4/
 - Karvinen 2017: Vagrant Revisited – Install & Boot New Virtual Machine in 31 seconds. Luettavissa: https://terokarvinen.com/2017/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/?fromSearch=vagrant
