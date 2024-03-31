@@ -75,7 +75,7 @@ ja tämä korjasi ongelmani.
 
 ![Onnistunut virtuaalikoneen käyttöönotto](https://github.com/rakkitect/Server-Management/blob/main/Images/vagrant-init2.png)
 
-### a) Salt asennus Linux-virtuaalikoneelle
+### d) Salt asennus Linux-virtuaalikoneelle
 
 Aloitin Salt-minionin asennuksen päivittämällä paketin hallinnan, jonka jälkeen ajoin asennuksen:
 
@@ -85,7 +85,7 @@ Aloitin Salt-minionin asennuksen päivittämällä paketin hallinnan, jonka jäl
 ![Salt-minion asennettuna](https://github.com/rakkitect/Server-Management/blob/main/Images/salt-minion-linux.png)
 
 
-### b) Viisi tärkeintä Salt tilafunktiota
+### e) Viisi tärkeintä Salt tilafunktiota
 
 #### pkg
 
@@ -134,13 +134,13 @@ joka tallensi "salt-run" nimiseen tiedostoon ajan komennon ajamishetkellä.
 ![cmd.run demonstraatio](https://github.com/rakkitect/Server-Management/blob/main/Images/cmd-run.png)
 ![Luotu tiedosto](https://github.com/rakkitect/Server-Management/blob/main/Images/salt-run.png)
 
-### c) Idempotentti
+### f) Idempotentti
 
 Idempotentti toiminto ei muuta järjestelmää ensimmäisen kerran jälkeen. Esimerkkinä tästä on mm. käyttämäni user.present tilafunktio; kun ajoin komennon ensimmäisen kerran, se loi käyttäjän - mutta vaikka ajaisin saman komennon sata kertaa, käyttäjää ei luoda uudestaan (ellei käyttäjää poisteta välissä)
 
 Muita vastaavia idempotenttejä tilafunktioita ovat file.managed ja pkg.installed, jotka ensimmäisen ajon jälkeen eivät muuta järjestelmän tilaa.
 
-### d) Tiedon kerääminen koneesta grains.items komennolla
+### g) Tiedon kerääminen koneesta grains.items komennolla
 
 Grains, yksikössä grain, ovat tietoja järjestelmästä. Tiedot saa tulostettua ruudulle komennolla:
 
