@@ -32,6 +32,31 @@
   - pkg.installed asentaa sovelluksen paketinhallinnasta
   - file.managed kopioi konfiguraatio-tiedoston herra-koneelta orja-koneelle
   - service.running varmistaa että sovellus on käynnissä
+ 
+### Salt ohjeet tilafunktioille pkg, file ja service
+
+#### pkg
+pkg-tilafunktiolla voi hallita pakettejen asennusta, poistoa ja päivitystä
+- pkg.installed varmistaa että paketti on asennettu, ja että se on oikea versio mikäli haluttu versio on tarkennettu.
+- pkg.purged varmistaa että pakettia ei ole asennettu. Mikäli paketti löytyy asennettuna, se poistetaan mukaanlukien mahdolliset konfiguraatiotiedostot
+- pkgs-avainta käytetään jos haluaa yhdellä tilalla määrittää useamman paketin listana
+
+#### file
+Käsittelee tiedostoja, hakemistoja ja symboolisia linkkejä
+- file.managed mahdollistaa tiedoston lataamisen herra-koneelta
+  - tiedostoa voidaan säilöä herra-koneella, lokaalisti orja-koneella tai HTTP/FTP-palvelimella
+- file.absent varmistaa että tiedostoa tai hakemistoa ei ole olemassa
+- file.symlink luo symboolisen linkin (symlink).
+  - Jos samanniminen symlink on jo olemassa, tila palaa epätotena. Tämä voidaan ennaltaehkäistä käyttämällä ````backupname: ```` 
+
+#### service
+Sisältää systemd-ympäristössä määriteltyjen palveluiden hallitsemista helpottavia tiedostoja ja ohjeita
+- service.running varmistaa että palvelu on käytössä
+- service.dead varmistaa että palvelu ei ole käytössä, pysäyttämällä sen mikäli se on päällä
+- service.enabled tila asettaa palvelun käynnistymään automaattisesti järjestelmän käynnistyessä
+
+## Tehtävä a) Hello SLS
+
 
 # Lähteet
 
