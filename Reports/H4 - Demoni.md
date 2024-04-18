@@ -55,7 +55,37 @@ Sisältää systemd-ympäristössä määriteltyjen palveluiden hallitsemista he
 - service.dead varmistaa että palvelu ei ole käytössä, pysäyttämällä sen mikäli se on päällä
 - service.enabled tila asettaa palvelun käynnistymään automaattisesti järjestelmän käynnistyessä
 
-## Tehtävä a) Hello SLS
+## Tehtävä a) Hello SLS! Tee Hei maailma -tila kirjoittamalla se tekstitiedostoon, esim /srv/salt/hello/init.sls.
+
+Loin kansion .sls tiedostoa varten komennolla ````sudo mkdir -p /srv/salt/hello/````. ````-p````-parametrin lisäämällä komento luo myös parent-kansion /salt/.
+
+Loin hello-hakemistoon init.sls kansion komennolla ````sudoedit init.sls```` ja kirjoitin sisällöksi:
+
+    /tmp/helloworld
+      file.managed
+
+Tämän jälkeen ajoin salt-tilan komennolla ````sudo salt-call --local state.apply hello````. Ohessa kuva prosessista ja lopputuloksesta.
+
+![Tehtävä a]
+
+
+## Tehtävä b) Tee top.sls niin, että useita valitsemiasi tiloja ajetaan automaattisesti
+
+Tätä tehtävää varten loin muutamia tiloja.
+
+![salt_tilat]
+
+Luotuani tilat, lisäsin ````/srv/salt/````-hakemistoon "top.sls"-tiedoston:
+
+    base:
+      '*':
+        - hello
+        - favorites
+        - users
+
+Sen jälkeen ajoin kaikki tilat komennolla ````sudo salt-call --local state.apply````, ja lopputulos oli tämä:
+
+![salt_top]
 
 
 # Lähteet
