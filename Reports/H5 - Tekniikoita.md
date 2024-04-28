@@ -74,7 +74,7 @@ Tilan ajo:
 
 Komennon ajo:
 
-![skripti ja käyttäjä](https://github.com/rakkitect/Server-Management/blob/main/Images/skripti_ja_k%C3%A4ytt%C3%A4j%C3%A4.png)
+![skripti ja käyttäjä](https://github.com/rakkitect/Server-Management/blob/main/Images/scriba_ja_jane.png)
 
 Jälkikäteen poistin 
 
