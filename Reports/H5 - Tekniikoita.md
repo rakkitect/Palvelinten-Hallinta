@@ -76,8 +76,6 @@ Komennon ajo:
 
 ![skripti ja käyttäjä](https://github.com/rakkitect/Server-Management/blob/main/Images/scriba_ja_jane.png)
 
-Jälkikäteen poistin 
-
 # Lähteet
 
 - Karvinen, T 2018. Control Windows with Salt. Luettavissa: https://terokarvinen.com/2018/control-windows-with-salt/. Luettu: 26.04.2024
