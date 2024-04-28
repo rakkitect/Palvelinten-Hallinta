@@ -60,7 +60,6 @@ Loin `foo.sh`-skriptin hakemistoon /srv/salt/:
 
     #!/usr/bin/bash
     echo moi
-    chmod ugo+x /usr/local/bin/foo.sh
     exit
 
 Jonka jälkeen loin `init.sls`-tiedoston hakemistoon `/srv/salt/script`
@@ -77,7 +76,7 @@ Komennon ajo:
 
 ![skripti ja käyttäjä](https://github.com/rakkitect/Server-Management/blob/main/Images/skripti_ja_k%C3%A4ytt%C3%A4j%C3%A4.png)
 
-Jostain syystä komento ei pystynyt antamaan toisella käyttäjällä oikeutta muokata oikeuksia, en tiedä mistä tämä johtuu.
+Jälkikäteen poistin 
 
 # Lähteet
 
