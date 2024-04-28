@@ -70,6 +70,8 @@ Jonka jälkeen loin `init.sls`-tiedoston hakemistoon `/srv/salt/script`
       file.managed:
         - source: salt://foo.sh
 
+Muokkasin myös tiedoston oikeuksia komennolla `sudo chmod ugo+x foo.sh`, joka antaa suoritusoikeuden käyttäjälle, ryhmälle sekä muille käyttäjille. Lisäksi `+x` antaa suoritusoikeuden skriptille.
+
 Tilan ajo:
 
 ![skripti salt-tila](https://github.com/rakkitect/Server-Management/blob/main/Images/scripti_salt_state.png)
