@@ -11,6 +11,8 @@
 - Windowsille pystyy asentamaan Salt-Masterin kautta **Chocolatey Gallery**-nimisen paketinhallinnan, jolloin pystyt asentamaan komentorivin avulla paketteja apt-get:in tavoin.
   - esim. ````sudo salt kone-nimi chocolatey.install classic-shell````
 
+### HUOM! Jälkikäteen tajusin että tätä varten olisi pitänyt tiivistää jonkun aiemman vuoden opiskelijan kotitehtävä raportti, mutta lukihärö teki tepposet :)
+
 ## Tehtävä a) Asenna Salt Windowsille
 
 Olen asentanut Saltin Windows-koneelleni jo kurssin alussa täältä: [docs.saltproject.io](https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html)
