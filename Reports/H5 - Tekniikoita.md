@@ -83,3 +83,4 @@ Komennon ajo:
 # Lähteet
 
 - Karvinen, T 2018. Control Windows with Salt. Luettavissa: https://terokarvinen.com/2018/control-windows-with-salt/. Luettu: 26.04.2024
+- karvinen, T 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/. Luettu: 28.04.2024
