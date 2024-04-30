@@ -4,7 +4,7 @@
 
 ### Control Windows with Salt
 
-### HUOM! Jälkikäteen tajusin että tätä varten olisi pitänyt tiivistää jonkun aiemman vuoden opiskelijan kotitehtävä raportti, mutta lukihärö teki tepposet :)
+### HUOM! Jälkikäteen tajusin että tätä varten olisi pitänyt tiivistää jonkun aiemman vuoden opiskelijan kotitehtävä-raportti, mutta lukihärö teki tepposet :)
 
 - Salt-Masterin pitää olla aina vähintään sama tai uudempi versio kuin Salt-Minionin (luulen että tämä pätee myös Linuxilla, ei pelkästään Windowsilla)
 - Artikkelin mukaan Saltin uudemmat versiot toimivat Windowsilla paremmin, mutta artikkeli on ~6 vuotta vanha, joten en tiedä pitääkö enää paikkaansa
