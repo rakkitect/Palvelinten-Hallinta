@@ -93,4 +93,8 @@ Vaikka tila toimi muuten niinkuin piti, niin nämä kaksi virhettä ovat suuria 
 
 # Lähteet:
 
+- Hautala, S. 2018. Ph h7 - Oma moduli. Luettavissa: https://sampohautala.wordpress.com/2018/12/09/ph-h7-oma-moduli/. Luettu: 06.05.2024
+- Laulajainen, K. 2018. Palvelinten hallinta h6 8.5.2018 – Oma miniprojekti Saltilla. Luettavissa: https://katrilaulajainen.wordpress.com/2018/05/10/palvelinten-hallinta-h6-8-5-2018-oma-miniprojekti-saltilla/. Luettu: 06.05.2024
+- Ojala, J. 2020. h7 Oma Moduuli. Luettavissa: https://janni.tech.blog/2020/05/19/h7-oma-moduuli/. Luettu: 06.05.2024
 - Salt Project s.a. Windows Package Manager. Luettavissa: https://docs.saltproject.io/en/latest/topics/windows/windows-package-manager.html#usage. Luettu: 06.05.2024
+- Vapalo, T. 2021. Oma moduli. Luettavissa: https://tonivapalo.com/posts/palvelintenhallinta/phvt7/. Luettu: 06.05.2024
