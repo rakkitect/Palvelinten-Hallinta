@@ -23,11 +23,11 @@
 
 Suoritin paketinhallintajärjestelmän alustuksen koneelleni komennoilla `salt-call --local winrepo.update_git_repos` ja `salt-call --local pkg.refresh_db`.
 
-![alustus]
+![alustus](https://github.com/rakkitect/Server-Management/blob/main/Images/pkg_manager_alustus.png)
 
 Tämän jälkeen asensin paketit **Firefox_x64**, **Gimp** ja **Putty**. Gimp vaati install wizardin käyttöä.
 
-![asennus]
+![asennus](https://github.com/rakkitect/Server-Management/blob/main/Images/pkg_manager_install.png)
 
 ## Tehtävä b) Keskitetyn hallinnan projektien esittely
 
@@ -70,7 +70,16 @@ Valitsin tehtävää varten Katri Laulajaisen yrityskoneen konfiguraatio-moduuli
 
 Loin uuden Vagrant koneen Debian/Bullseye64-käyttöjärjestelmällä. Käynnistettyäni virtuaalikoneen päivitin paketinhallinnan, asensin Git:in ja kopioin moduulin Git repon kotihakemistooni komennolla `git clone https://github.com/KatriL/tulikettu.git`.
 
+![Repon kopiointi](https://github.com/rakkitect/Server-Management/blob/main/Images/moduulin_lataus.png)
+
 Seurasin moduulin tekijän ohjeita, ja ajoin komennon `sudo bash high.sh`. Huomasin heti yhden ongelman: Moduuli ei asenna ufw-pakettia, jolloin osa moduulin tiloista ei toimi. Lisäksi 'firefox' pakettia ei löytynyt. Korjasin nämä ongelmat itse lisäämällä tilan `init.sls`-tiedostoon asennettavan paketin ufw, ja muokkasin asennettavan paketin "firefox" muotoon "firefox-esr". Lisäksi muokkasin ID:n "/etc/firefox/syspref.js" muotoon "/etc/firefox-esr/syspref.js", ja tämän jälkeen tila toimi niinkuin piti.
+
+
+Keltaisella korostettu muutetut kohdat.
+
+![Muokattu init.sls](https://github.com/rakkitect/Server-Management/blob/main/Images/moduuli_init.png)
+
+![Ajettu tila](https://github.com/rakkitect/Server-Management/blob/main/Images/moduuli_ajettu_tila.png)
 
 Vaikka tila toimi muuten niinkuin piti, niin nämä kaksi virhettä ovat suuria ja tekevät tilasta toimimattoman. En tiedä johtuuko ongelmat mahdollisesti eri käyttöjärjestelmistä.
 
@@ -81,7 +90,6 @@ Vaikka tila toimi muuten niinkuin piti, niin nämä kaksi virhettä ovat suuria 
 - Moduuli joka asentaa kotikoneeseen halutut ohjelmat (windows)
 - Moduuli joka asentaa palvelinympäristön (linux)
 - Moduuli joka alustaa pienen yrityksen käyttäjien koneet käyttökuntoisiksi
-
 
 # Lähteet:
 
