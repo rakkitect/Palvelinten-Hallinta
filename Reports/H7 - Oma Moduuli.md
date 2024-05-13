@@ -58,7 +58,8 @@ Pidin Katri Laulajaisen (Laulajainen, K. 2018) tekemästä komennosta joka ajaa 
     $ cat run.sh
     salt-call --local state.highstate --file-root /srv/salt
 
-Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on.
+Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on. Tämä versio ajaa Salt-tilan lokaalisti `--local`:in vaihtamalla `'*'` ajaa tilan myös orjille. 
+
 
 ## Asennus
 
