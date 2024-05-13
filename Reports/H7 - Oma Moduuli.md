@@ -30,11 +30,13 @@ Moduulin ideana on asentaa kirjaston yhteiskäyttökoneelle halutut sovellukset:
 - Audacity
 - VLC Media Player
 
-Listatut sovellukset poimin näistä artikkeleista: https://itsfoss.com/essential-linux-applications/ ja https://www.techradar.com/best/best-linux-apps.
+Listatut sovellukset poimin näistä artikkeleista:
+- https://itsfoss.com/essential-linux-applications/
+- https://www.techradar.com/best/best-linux-apps.
 
 ## Moduulin rakentaminen
 
-Loin kansion "/srv/salt/installer", ja sinne tiedoston "init.sls":
+Loin kansion `/srv/salt/installer`, ja sinne tiedoston `init.sls`:
 
     required:
       pkg.installed:
@@ -45,13 +47,13 @@ Loin kansion "/srv/salt/installer", ja sinne tiedoston "init.sls":
           - audacity
           - vlc
 
-Seuraavaksi loin "top.sls"-tiedoston "/srv/salt/"-kansioon:
+Seuraavaksi loin `top.sls`-tiedoston `/srv/salt/`-kansioon:
 
     base:
       '*':
         - installer
 
-Pidin Katri Laulajaisen (Laulajainen, K. 2018) tekemästä komennosta joka ajaa "top.sls"-tiedoston:
+Pidin Katri Laulajaisen (Laulajainen, K. 2018) tekemästä komennosta joka ajaa `top.sls`-tiedoston:
 
     $ cat run.sh
     salt-call --local state.highstate --file-root /srv/salt
@@ -62,13 +64,15 @@ Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on.
 
 Asennukseen tarvittavat tiedostot löytyvät [GitHubistani](https://github.com/rakkitect/oma-moduli.git).
 
-Kun Git repo on kloonattu koneelle, "/srv/salt"-kansio kopioidaan omaksi kansiokseen komennolla `sudo cp -r ~/oma-moduli/srv/salt /srv/salt/`.
+Kun Git repo on kloonattu koneelle, `/srv/salt`-kansio kopioidaan omaksi kansiokseen komennolla `sudo cp -r ~/oma-moduli/srv/salt /srv/salt/`.
 
-Tämän jälkeen palataan "oma-moduli"-hakemistoon, ja ajetaan `sudo bash run.sh`.
+Tämän jälkeen palataan `oma-moduli`-hakemistoon, ja ajetaan `sudo bash run.sh`.
 
 LibreOffice on isohko paketti, joten asennuksessa kestää jonkin aikaa (~1-2 min)
 
 Lopputuloksena on, että aiemmin listatut ohjelmat ovat asentuneet.
+
+![lopputulos](https://github.com/rakkitect/Server-Management/blob/main/Images/lopputulos.png)
 
 # Lähteet:
 
