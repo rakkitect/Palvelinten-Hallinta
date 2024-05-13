@@ -2,6 +2,8 @@
 
 Tässä raportissa käyn läpi Tero Karvisen kurssille [Palvelinten Hallinta](https://terokarvinen.com/2024/configuration-management-2024-spring/) lopputehtäväksi tekemäni moduulin.
 
+Tehtävänanto: https://terokarvinen.com/2024/configuration-management-2024-spring/#h7-oma-miniprojekti
+
 Moduuli on rakennettu ja toiminta tarkistettu Debian/Bullseye64 virtuaalikoneella.
 
 Tiedostan että moduuli voisi olla laajempi ja käyttäjäystävällisempi, mutta aikataulujen takia jouduin pitämään tämän suppeana.
@@ -70,7 +72,8 @@ Lopputuloksena on, että aiemmin listatut ohjelmat ovat asentuneet.
 
 # Lähteet:
 
-https://terokarvinen.com/2024/configuration-management-2024-spring/
-https://terokarvinen.com/2023/salt-vagrant/?fromSearch=salt
-https://itsfoss.com/essential-linux-applications/
-https://katrilaulajainen.wordpress.com/2018/05/10/palvelinten-hallinta-h6-8-5-2018-oma-miniprojekti-saltilla/
+Karvinen, T. 2024. Infra as Code - Palvelinten Hallinta 2024. Luettavissa: https://terokarvinen.com/2024/configuration-management-2024-spring/
+Karvinen, T. 2023. Salt Vagrant - automatically provision one master and two slaves. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/?fromSearch=salt
+Das, A. 2024. Must Have Essential Applications for Desktop Linux Users. Luettavissa: https://itsfoss.com/essential-linux-applications/
+Techradar. 2024. Best Linux app of 2024. Luettavissa: https://www.techradar.com/best/best-linux-apps
+Laulajainen, K. 2018. Palvelinten hallinta h6 8.5.2018 – Oma miniprojekti Saltilla. Luettavissa: https://katrilaulajainen.wordpress.com/2018/05/10/palvelinten-hallinta-h6-8-5-2018-oma-miniprojekti-saltilla/
