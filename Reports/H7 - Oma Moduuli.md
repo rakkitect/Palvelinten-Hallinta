@@ -58,7 +58,11 @@ Pidin Katri Laulajaisen (Laulajainen, K. 2018) tekemästä komennosta joka ajaa 
     $ cat run.sh
     salt-call --local state.highstate --file-root /srv/salt
 
-Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on. Tämä versio ajaa Salt-tilan lokaalisti, `--local`:in vaihtamalla `'*'` ajaa tilan myös orjille mikäli ajettu herra-koneelta. 
+Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on. Tämä versio ajaa Salt-tilan lokaalisti. Yritin ajaa komentoa myös '*' parametrillä, mutta tässä vaiheessa sain virheen:
+
+    [ERROR   ] DNS lookup or connection check of 'salt' failed.
+    [ERROR   ] Master hostname: 'salt' not found or not responsive. Retrying in 30 seconds
+
 
 
 ## Asennus
