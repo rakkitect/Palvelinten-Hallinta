@@ -67,7 +67,7 @@ Komento ajetaan komennolla `sudo bash run.sh`, hakemistossa jossa se on. Tämä 
 
 ## Asennus
 
-Asennukseen tarvittavat tiedostot löytyvät [GitHubistani](https://github.com/rakkitect/oma-moduli.git).
+Asennukseen tarvittavat tiedostot löytyvät GitHubistani: https://github.com/rakkitect/oma-moduli.git.
 
 Kun Git repo on kloonattu koneelle, `/srv/salt`-kansio kopioidaan omaksi kansiokseen komennolla `sudo cp -r ~/oma-moduli/srv/salt /srv/salt/`.
 
